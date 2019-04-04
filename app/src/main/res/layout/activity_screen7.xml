@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Screen5"
+    tools:context=".Screen7"
     android:orientation="vertical">
 
 
     <TextView
-        android:id="@+id/tv_surgery_day_data_entry"
+        android:id="@+id/tv_post_surgery_followup"
         android:paddingLeft="5dp"
         android:layout_margin="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Surgery-day Data Entry"
+        android:text="Post Surgery Follow Up"
         android:textSize="30dp"
         android:textStyle="bold"
         android:textAlignment="center"
@@ -32,15 +32,15 @@
         />
 
     <EditText
-        android:id="@+id/et_reference_number"
+        android:id="@+id/et_reference_number_2"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Reference Number, eg: 123"
+        android:hint="Enter Reference Number, eg: 123"
         />
 
     <Button
-        android:id="@+id/btn_submit_ref_no"
+        android:id="@+id/btn_submit_ref_no_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
@@ -49,4 +49,5 @@
         android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
         android:textSize="20dp"/>
+
 </LinearLayout>
