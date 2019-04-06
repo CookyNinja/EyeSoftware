@@ -28,7 +28,7 @@ public class HomeScreen extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(HomeScreen.this, PreSurgeryCal.class);
                 startActivity(intent);
-                finish();
+                //finish();
             }
         });
 
@@ -37,7 +37,7 @@ public class HomeScreen extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(HomeScreen.this, SurgeryDayDataEntry.class);
                 startActivity(intent);
-                finish();
+                //finish();
             }
         });
 
@@ -46,7 +46,7 @@ public class HomeScreen extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(HomeScreen.this, PostSurgeryFollowUp.class);
                 startActivity(intent);
-                finish();
+                //finish();
             }
         });
 
@@ -55,7 +55,7 @@ public class HomeScreen extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(HomeScreen.this, About.class);
                 startActivity(intent);
-                finish();
+                //finish();
             }
         });
 
@@ -64,7 +64,7 @@ public class HomeScreen extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(HomeScreen.this, Instructions.class);
                 startActivity(intent);
-                finish();
+                //finish();
             }
         });
 

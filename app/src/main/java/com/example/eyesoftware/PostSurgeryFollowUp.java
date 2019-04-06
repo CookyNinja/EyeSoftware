@@ -21,15 +21,15 @@ public class PostSurgeryFollowUp extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(PostSurgeryFollowUp.this, Screen8.class);
+                Intent intent = new Intent(PostSurgeryFollowUp.this, UpdateDataTwo.class);
                 startActivity(intent);
-                finish();
+                //finish();
             }
         });
     }
 
     // back to menu bar on pressing back button
-    @Override
+    /*@Override
     public void onBackPressed() {
         super.onBackPressed();
         // Do extra stuff here
@@ -37,5 +37,5 @@ public class PostSurgeryFollowUp extends AppCompatActivity {
         Intent intent = new Intent( PostSurgeryFollowUp.this , HomeScreen.class);
         startActivity(intent);
         finish();
-    }
+    }*/
 }

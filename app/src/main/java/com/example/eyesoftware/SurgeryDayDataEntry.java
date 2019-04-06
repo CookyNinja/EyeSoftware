@@ -20,9 +20,9 @@ public class SurgeryDayDataEntry extends AppCompatActivity {
         btn_submit_ref_no.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SurgeryDayDataEntry.this, Screen6.class);
+                Intent intent = new Intent(SurgeryDayDataEntry.this, UpdateData.class);
                 startActivity(intent);
-                finish();
+                //finish();
             }
         });
 
@@ -30,7 +30,7 @@ public class SurgeryDayDataEntry extends AppCompatActivity {
     }
 
     // back to menu bar on pressing back button
-    @Override
+    /*@Override
     public void onBackPressed() {
         super.onBackPressed();
         // Do extra stuff here
@@ -38,5 +38,5 @@ public class SurgeryDayDataEntry extends AppCompatActivity {
         Intent intent = new Intent( SurgeryDayDataEntry.this , HomeScreen.class);
         startActivity(intent);
         finish();
-    }
+    }*/
 }

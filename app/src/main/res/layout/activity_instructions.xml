@@ -4,43 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Instructions"
-    android:background="@drawable/gradient">
+    android:background="@drawable/gradient"
+    tools:context=".Instructions">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="50dp"
-        android:textColor="@color/title"
-        android:textStyle="bold"
-        android:text="Instructions"
-        android:layout_margin="20dp"
-        android:layout_gravity="center"
-        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/black"
-        android:text="This app is meant to be used by ophthalmologists. This app uses artificial intelligence to recommend the power of the intraocular lens to be used in a cataract surgery.
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:text="Instructions"
+                android:textColor="@color/title"
+                android:textSize="28sp"
+                android:textStyle="bold" />
 
-Pre-surgery calculations: A surgeon may use this page before the surgery to calculate the power of the intraocular lens to be given to a patient.
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="8"
+                android:src="@mipmap/logo" />
 
-Surgery-day data entry: A surgeon may use this page to enter information just after conducting a surgery.
 
-Post-surgery follow-up: A surgeon may use this page to enter the post-surgery refractive error on the day a patient comes for a follow-up.
+        </LinearLayout>
 
-This app uses artificial intelligence and improves by studying the data submitted by surgeons.
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="50dp"
+            android:text="This app is meant to be used by ophthalmologists. This app uses artificial intelligence to recommend the power of the intraocular lens to be used in a cataract surgery.\n\nPre-surgery calculations: A surgeon may use this page before the surgery to calculate the power of the intraocular lens to be given to a patient.\n\nSurgery-day data entry: A surgeon may use this page to enter information just after conducting a surgery.\n\nPost-surgery follow-up: A surgeon may use this page to enter the post-surgery refractive error on the day a patient comes for a follow-up.\n\nThis app uses artificial intelligence and improves by studying the data submitted by surgeons.
 
 "
-        android:textSize="25dp"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"/>
+            android:textColor="@color/title"
+            android:textSize="15sp" />
 
     </LinearLayout>
 

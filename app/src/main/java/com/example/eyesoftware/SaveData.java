@@ -3,7 +3,9 @@ package com.example.eyesoftware;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 import java.util.ArrayList;
@@ -42,10 +44,20 @@ public class SaveData extends AppCompatActivity {
         spinner.setAdapter(dataAdapter);
         spinner2.setAdapter(dataAdapter2);
 
+        Button btn_save = findViewById(R.id.btn_save);
+        btn_save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SaveData.this, HomeScreen.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
 
     // back to menu bar on pressing back button
-    @Override
+    /*@Override
     public void onBackPressed() {
         super.onBackPressed();
         // Do extra stuff here
@@ -53,5 +65,5 @@ public class SaveData extends AppCompatActivity {
         Intent intent = new Intent( SaveData.this , Recommendation.class);
         startActivity(intent);
         finish();
-    }
+    }*/
 }

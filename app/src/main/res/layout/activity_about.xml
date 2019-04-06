@@ -4,40 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".About"
-    android:background="@drawable/gradient">
+    android:background="@drawable/gradient"
+    tools:context=".About">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/title"
-        android:textSize="50dp"
-        android:textStyle="bold"
-        android:text="About"
-        android:layout_margin="20dp"
-        android:layout_gravity="center"
-        />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="This app has been developed as a part of the ‘AI for Eye’ research initiative of Insight Eye Clinic, New Delhi and Netaji Subhas University of Technology, New Delhi.
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-Ophthalmologists: Aashima Sawhney and Saurabh Sawhney
-Software architect: Pinaki Chakraborty
-Artificial intelligence engineers: Akshita Agarwal, Mansi Breja and Rahmeen Habib
-User interaction engineers: Arshia Kaul and Pooja
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:text="About"
+                android:textColor="@color/title"
+                android:textSize="28sp"
+                android:textStyle="bold" />
 
-For more information, please write to saurabhsawhney@rediffmail.com.
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="8"
+                android:src="@mipmap/logo" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp"
+            android:text="This app has been developed as a part of the ‘AI for Eye’ research initiative of Insight Eye Clinic, New Delhi and Netaji Subhas University of Technology, New Delhi.\n\nOphthalmologists:   Aashima Sawhney and Saurabh Sawhney\nSoftware architect:   Pinaki Chakraborty\nArtificial intelligence engineers:   Akshita Agarwal, Mansi Breja and Rahmeen Habib\nUser interaction engineers:   Arshia Kaul and Pooja\n\nFor more information, please write to saurabhsawhney@rediffmail.com.
 "
-        android:textSize="25dp"
-        android:textColor="@android:color/black"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"/>
+            android:textColor="@color/title"
+            android:textSize="15sp" />
 
     </LinearLayout>
 

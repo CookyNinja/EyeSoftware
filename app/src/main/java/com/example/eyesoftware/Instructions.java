@@ -13,7 +13,7 @@ public class Instructions extends AppCompatActivity {
     }
 
     // back to menu bar on pressing back button
-    @Override
+    /*@Override
     public void onBackPressed() {
         super.onBackPressed();
         // Do extra stuff here
@@ -21,5 +21,5 @@ public class Instructions extends AppCompatActivity {
         Intent intent = new Intent( Instructions.this , HomeScreen.class);
         startActivity(intent);
         finish();
-    }
+    }*/
 }

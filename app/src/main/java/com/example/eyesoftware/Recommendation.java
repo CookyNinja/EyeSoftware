@@ -22,13 +22,13 @@ public class Recommendation extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent( Recommendation.this , SaveData.class);
                 startActivity(intent);
-                finish();
+                //finish();
             }
         });
     }
 
     // back to menu bar on pressing back button
-    @Override
+    /*@Override
     public void onBackPressed() {
         super.onBackPressed();
         // Do extra stuff here
@@ -36,6 +36,6 @@ public class Recommendation extends AppCompatActivity {
         Intent intent = new Intent( Recommendation.this , PreSurgeryCal.class);
         startActivity(intent);
         finish();
-    }
+    }*/
 
 }

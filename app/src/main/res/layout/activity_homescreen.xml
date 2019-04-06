@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:text="IOL Power Module"
         android:textColor="@android:color/black"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:layout_gravity="center"/>
 
     <TextView
@@ -30,9 +30,9 @@
         android:layout_height="wrap_content"
         android:text="Version 1.001"
         android:textColor="@android:color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="20dp"/>
 
 
     <Button
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:text="Pre-surgery Calculation"
         android:layout_gravity="center"
-        android:textSize="24sp"
+        android:textSize="14sp"
         android:padding="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:text="Surgery-day Data Entry"
         android:layout_gravity="center"
-        android:textSize="24sp"
+        android:textSize="14sp"
         android:padding="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
         android:text="Post-surgery Follow-up "
         android:layout_gravity="center"
-        android:textSize="24sp"
+        android:textSize="14sp"
         android:padding="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
@@ -87,7 +87,7 @@
         android:layout_height="wrap_content"
         android:text="Instructions"
         android:layout_gravity="center"
-        android:textSize="24sp"
+        android:textSize="14sp"
         android:padding="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
@@ -102,7 +102,7 @@
         android:layout_height="wrap_content"
         android:text="About"
         android:layout_gravity="center"
-        android:textSize="24sp"
+        android:textSize="14sp"
         android:padding="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"

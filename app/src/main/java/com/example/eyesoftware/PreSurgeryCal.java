@@ -45,14 +45,14 @@ public class PreSurgeryCal extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent( PreSurgeryCal.this , Recommendation.class);
                 startActivity(intent);
-                finish();
+                //finish();
             }
         });
 
     }
 
     // back to menu bar on pressing back button
-    @Override
+    /*@Override
     public void onBackPressed() {
         super.onBackPressed();
         // Do extra stuff here
@@ -60,5 +60,5 @@ public class PreSurgeryCal extends AppCompatActivity {
         Intent intent = new Intent( PreSurgeryCal.this , HomeScreen.class);
         startActivity(intent);
         finish();
-    }
+    }*/
 }
