@@ -9,24 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".Screen1" >
+        <activity android:name=".About"></activity>
+        <activity android:name=".Instructions" />
+        <activity android:name=".HomeScreen">
             <intent-filter>
-
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Screen2" />
+        <activity android:name=".PreSurgeryCal" />
         <activity android:name=".Screen3" />
         <activity android:name=".Screen4" />
         <activity android:name=".Screen8" />
-        <activity android:name=".Screen7" />
+        <activity android:name=".PostSurgeryFollowUp" />
         <activity android:name=".Screen6" />
-        <activity android:name=".Screen5" />
-
+        <activity android:name=".SurgeryDayDataEntry" />
     </application>
 
 </manifest>

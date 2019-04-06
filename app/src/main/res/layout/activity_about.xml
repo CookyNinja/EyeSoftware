@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About"
+    android:background="@drawable/gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:text="About"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This app has been developed as a part of the ‘AI for Eye’ research initiative of Insight Eye Clinic, New Delhi and Netaji Subhas University of Technology, New Delhi.
+
+Ophthalmologists: Aashima Sawhney and Saurabh Sawhney
+Software architect: Pinaki Chakraborty
+Artificial intelligence engineers: Akshita Agarwal, Mansi Breja and Rahmeen Habib
+User interaction engineers: Arshia Kaul and Pooja
+
+For more information, please write to saurabhsawhney@rediffmail.com.
+"
+        android:textSize="25dp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

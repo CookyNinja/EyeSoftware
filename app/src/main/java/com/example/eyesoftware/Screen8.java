@@ -21,7 +21,7 @@ public class Screen8 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(Screen8.this, Screen1.class);
+                Intent intent = new Intent(Screen8.this, HomeScreen.class);
                 startActivity(intent);
                 finish();
             }

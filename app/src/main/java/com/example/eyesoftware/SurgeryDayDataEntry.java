@@ -6,25 +6,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Screen7 extends AppCompatActivity {
+public class SurgeryDayDataEntry extends AppCompatActivity {
 
-    Button btn_submit_ref_no_2;
+    Button btn_submit_ref_no;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_screen7);
+        setContentView(R.layout.activity_surgerydaydataentry);
 
-        btn_submit_ref_no_2 = findViewById(R.id.btn_submit_ref_no_2);
+        btn_submit_ref_no = findViewById(R.id.btn_submit_ref_no);
 
-        btn_submit_ref_no_2.setOnClickListener(new View.OnClickListener() {
+        btn_submit_ref_no.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent intent = new Intent(Screen7.this, Screen8.class);
+                Intent intent = new Intent(SurgeryDayDataEntry.this, Screen6.class);
                 startActivity(intent);
                 finish();
             }
         });
+
+
     }
 }

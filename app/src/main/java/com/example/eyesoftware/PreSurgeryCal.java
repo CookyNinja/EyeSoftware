@@ -8,12 +8,12 @@ import android.widget.Spinner;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Screen2 extends AppCompatActivity {
+public class PreSurgeryCal extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_screen2);
+        setContentView(R.layout.activity_presurgerycal);
 
         // Spinner element
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
@@ -25,7 +25,7 @@ public class Screen2 extends AppCompatActivity {
         categories.add("Model 3");
 
         // Creating adapter for spinner
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(Screen2.this, android.R.layout.simple_spinner_item, categories);
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(PreSurgeryCal.this, android.R.layout.simple_spinner_item, categories);
 
         // Drop down layout style - list view with radio button
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
