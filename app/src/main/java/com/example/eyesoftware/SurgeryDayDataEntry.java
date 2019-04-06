@@ -28,4 +28,15 @@ public class SurgeryDayDataEntry extends AppCompatActivity {
 
 
     }
+
+    // back to menu bar on pressing back button
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        // Do extra stuff here
+
+        Intent intent = new Intent( SurgeryDayDataEntry.this , HomeScreen.class);
+        startActivity(intent);
+        finish();
+    }
 }

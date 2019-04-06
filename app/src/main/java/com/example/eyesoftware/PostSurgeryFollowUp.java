@@ -27,4 +27,15 @@ public class PostSurgeryFollowUp extends AppCompatActivity {
             }
         });
     }
+
+    // back to menu bar on pressing back button
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        // Do extra stuff here
+
+        Intent intent = new Intent( PostSurgeryFollowUp.this , HomeScreen.class);
+        startActivity(intent);
+        finish();
+    }
 }

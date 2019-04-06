@@ -1,5 +1,6 @@
 package com.example.eyesoftware;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
@@ -33,5 +34,16 @@ public class PreSurgeryCal extends AppCompatActivity {
         // attaching data adapter to spinner
         spinner.setAdapter(dataAdapter);
 
+    }
+
+    // back to menu bar on pressing back button
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        // Do extra stuff here
+
+        Intent intent = new Intent( PreSurgeryCal.this , HomeScreen.class);
+        startActivity(intent);
+        finish();
     }
 }
