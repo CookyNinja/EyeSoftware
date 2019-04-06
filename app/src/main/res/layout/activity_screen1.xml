@@ -1,66 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:background="@drawable/gradient">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:orientation="vertical"
-        android:background="#EEEEEE"
-        android:layout_marginTop="30dp"
-        android:gravity="center">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="Pre-surgery Calculation"
-            android:textSize="24sp"/>
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/logo" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="50dp"
-            android:text="Surgery-day Data Entry"
-            android:textSize="24sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IOL Power Module"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"
+        android:layout_gravity="center"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="50dp"
-            android:text="Post-surgery Follow-up "
-            android:textSize="24sp"/>
-    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version 1.001"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"/>
 
-    <LinearLayout
+
+    <Button
+        android:id="@+id/btn_pre_surgery_cal"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:orientation="vertical"
-        android:background="#CCDDCC"
-        android:layout_marginTop="30dp"
-        android:gravity="center">
+        android:layout_height="wrap_content"
+        android:text="Pre-surgery Calculation"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_corner_button_bg"
+        android:textColor="@android:color/white"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="Instructions"
-            android:textSize="20sp"/>
+    <Button
+        android:id="@+id/btn_surgery_day_data_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Surgery-day Data Entry"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_corner_button_bg"
+        android:textColor="@android:color/white"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:text="About"
-            android:textSize="20sp"/>
+    <Button
+        android:id="@+id/btn_post_surgery_follow_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post-surgery Follow-up "
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_corner_button_bg"
+        android:textColor="@android:color/white" />
+
+
+    <Button
+        android:id="@+id/btn_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instructions"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_corner_button_bg"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_corner_button_bg"
+        android:textColor="@android:color/white"/>
+
 
     </LinearLayout>
-
-</LinearLayout>
+</ScrollView>
 
