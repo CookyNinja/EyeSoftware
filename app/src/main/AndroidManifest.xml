@@ -19,8 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".PreSurgeryCal" />
-        <activity android:name=".Screen3" />
-        <activity android:name=".Screen4" />
+        <activity android:name=".Recommendation" />
+        <activity android:name=".SaveData" />
         <activity android:name=".Screen8" />
         <activity android:name=".PostSurgeryFollowUp" />
         <activity android:name=".Screen6" />

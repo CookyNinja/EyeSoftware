@@ -9,21 +9,36 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/gradient">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="10dp"
-            android:text="Enter Patient Details"
-            android:textAlignment="center"
-            android:textSize="30sp" />
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_weight="2"
+                android:text="Enter Patient Details"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textColor="@color/title"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="5"
+                android:src="@mipmap/logo"/>
+
+        </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:layout_marginVertical="15dp"
-            android:background="#EEEEEE"
             android:gravity="center"
             android:orientation="vertical"
             android:paddingHorizontal="5dp">
@@ -33,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_gravity="left"
-                android:layout_marginVertical="5dp">
+                android:layout_marginVertical="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -41,16 +56,16 @@
                     android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:text="Reference Number* :"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"/>
 
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
                     android:gravity="center"
-                    android:hint="Reference Number*"
-                    android:inputType="numberDecimal"
-                    android:textSize="18sp" />
+                    android:hint="Reference Number"
+                    android:textSize="18sp"
+                    android:background="@drawable/edittext_style"/>
 
             </LinearLayout>
 
@@ -59,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_gravity="left"
-                android:layout_marginVertical="5dp">
+                android:layout_marginVertical="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -72,11 +87,11 @@
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    android:layout_weight="6"
                     android:gravity="center"
                     android:hint="Name"
-                    android:inputType="numberDecimal"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:background="@drawable/edittext_style"/>
 
             </LinearLayout>
 
@@ -85,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_gravity="left"
-                android:layout_marginVertical="5dp">
+                android:layout_marginVertical="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -102,13 +117,15 @@
                     android:gravity="center"
                     android:hint="Age"
                     android:inputType="numberDecimal"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:background="@drawable/edittext_style"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:gravity="center"
+                    android:gravity="left"
+                    android:layout_marginLeft="4dp"
                     android:text="years"
                     android:textSize="18sp" />
 
@@ -139,7 +156,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="please select"
+                    android:text="@string/please_select"
                     android:layout_weight="1"/>
 
             </LinearLayout>
@@ -177,11 +194,16 @@
         </LinearLayout>
 
         <Button
-            android:layout_width="match_parent"
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginVertical="20dp"
-            android:text="Save" />
+            android:gravity="center"
+            android:text="Save"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:background="@drawable/round_corner_button_bg"
+            android:textColor="@android:color/white"/>
 
     </LinearLayout>
 

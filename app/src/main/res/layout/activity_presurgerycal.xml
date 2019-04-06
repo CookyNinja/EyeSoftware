@@ -26,6 +26,7 @@
                 android:gravity="center_vertical"
                 android:layout_weight="2"
                 android:text="Enter Data on the Eye"
+                android:textStyle="bold"
                 android:textSize="28sp"
                 android:textColor="@color/title"/>
 
@@ -560,7 +561,7 @@
             android:textColor="@android:color/white"/>
 
         <Button
-            android:id="@+id/btn_pre_surgery_cal"
+            android:id="@+id/btn_reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"

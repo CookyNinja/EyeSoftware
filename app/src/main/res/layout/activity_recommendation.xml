@@ -4,21 +4,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        android:text="Recommended Power of Intraocular Lens"
-        android:textAlignment="center"
-        android:textSize="30sp" />
+    android:orientation="vertical"
+    android:background="@drawable/gradient">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginVertical="15dp"
-        android:background="#EEEEEE"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:text="Recommended Power of Intraocular Lens"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            android:textColor="@color/title"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:src="@mipmap/logo"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -151,11 +167,17 @@
     </LinearLayout>
 
     <Button
-        android:layout_width="match_parent"
+        android:id="@+id/btn_save_data"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="20dp"
-        android:text="Save Data" />
+        android:gravity="center"
+        android:text="Save Data"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/round_corner_button_bg"
+        android:textColor="@android:color/white"/>
 
 </LinearLayout>
 

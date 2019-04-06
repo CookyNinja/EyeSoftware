@@ -1,5 +1,6 @@
 package com.example.eyesoftware;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
@@ -8,12 +9,12 @@ import android.widget.Spinner;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Screen4 extends AppCompatActivity {
+public class SaveData extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_screen4);
+        setContentView(R.layout.activity_savedata);
 
         // Spinner element
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
@@ -30,8 +31,8 @@ public class Screen4 extends AppCompatActivity {
         categories2.add("Right");
 
         // Creating adapter for spinner
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(Screen4.this, android.R.layout.simple_spinner_item, categories);
-        ArrayAdapter<String> dataAdapter2 = new ArrayAdapter<String>(Screen4.this, android.R.layout.simple_spinner_item, categories2);
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(SaveData.this, android.R.layout.simple_spinner_item, categories);
+        ArrayAdapter<String> dataAdapter2 = new ArrayAdapter<String>(SaveData.this, android.R.layout.simple_spinner_item, categories2);
 
         // Drop down layout style - list view with radio button
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -41,5 +42,16 @@ public class Screen4 extends AppCompatActivity {
         spinner.setAdapter(dataAdapter);
         spinner2.setAdapter(dataAdapter2);
 
+    }
+
+    // back to menu bar on pressing back button
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        // Do extra stuff here
+
+        Intent intent = new Intent( SaveData.this , Recommendation.class);
+        startActivity(intent);
+        finish();
     }
 }
