@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UpdateData"
-    >
+    tools:context=".UpdateData">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@drawable/gradient">
+        android:background="@drawable/gradient"
+        android:orientation="vertical">
 
 
         <LinearLayout
@@ -26,10 +25,10 @@
                 android:layout_margin="5dp"
                 android:layout_weight="0"
                 android:paddingLeft="5dp"
-                android:textStyle="bold"
                 android:text="Update Data"
                 android:textColor="@color/title"
-                android:textSize="28sp" />
+                android:textSize="28sp"
+                android:textStyle="bold" />
 
 
             <ImageView
@@ -52,216 +51,297 @@
             android:textColor="@color/title"
             android:textSize="20sp" />
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:orientation="horizontal"
+            android:paddingVertical="2dp">
 
             <TextView
-                android:id="@+id/tv_ref_no_display"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/tv_ref_no_display_1"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_marginTop="20dp"
-                android:text="Reference No. : "
+                android:gravity="center_vertical"
+                android:text="Reference No.: "
                 android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/tv_ref_no_display_value"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+
+            <EditText
+                android:id="@+id/et_ref_no_display_value_1"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                android:layout_marginTop="20dp"
-                android:text="XXXX"
-                android:textSize="20sp" />
+                android:layout_toRightOf="@id/tv_ref_no_display_1"
+                android:background="@drawable/edittext_style"
+                android:gravity="center"
+                android:hint="Name"
+                android:textAlignment="center" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
-        <TextView
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:text="Name or Initials: "
-            android:textSize="20sp" />
-
-        <EditText
-            android:id="@+id/et_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@drawable/edittext_style"
-            android:hint="Name or Initials"
-            android:textAlignment="center" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:orientation="horizontal"
+            android:paddingVertical="2dp">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/tv_name_1"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
                 android:layout_margin="7dp"
+                android:gravity="center_vertical"
+                android:text="Name : "
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_name_1"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@id/tv_name_1"
+                android:background="@drawable/edittext_style"
+                android:gravity="center"
+                android:hint="Name"
+                android:textAlignment="center" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:orientation="horizontal"
+            android:paddingVertical="2dp">
+
+            <TextView
+                android:id="@+id/tv_age_1"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7dp"
+                android:gravity="center_vertical"
                 android:text="Age : "
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/et_age"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:id="@+id/et_age_1"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
                 android:layout_margin="10dp"
+                android:layout_toRightOf="@id/tv_age_1"
                 android:background="@drawable/edittext_style"
+                android:gravity="center"
                 android:hint="Age"
                 android:textAlignment="center" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:orientation="horizontal"
+            android:paddingVertical="2dp">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/tv_gender_1"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
                 android:layout_margin="7dp"
+                android:gravity="center_vertical"
                 android:text="Gender : "
                 android:textSize="20sp" />
 
             <Spinner
-                android:id="@+id/spinner_gender"
-                android:layout_width="match_parent"
+                android:id="@+id/spinner_gender_1"
+                android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="7dp"
-                android:layout_marginRight="20dp">
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/tv_gender_1"
+                android:gravity="center">
 
             </Spinner>
 
-        </LinearLayout>
+        </RelativeLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:orientation="horizontal"
+            android:paddingVertical="2dp">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/tv_eye_1"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
                 android:layout_margin="7dp"
+                android:gravity="center_vertical"
                 android:text="Eye* : "
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/et_eye"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:id="@+id/et_eye_1"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
                 android:layout_margin="10dp"
+                android:layout_toRightOf="@id/tv_eye_1"
                 android:background="@drawable/edittext_style"
+                android:gravity="center"
                 android:hint="Eye"
                 android:textAlignment="center" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:orientation="horizontal"
+            android:paddingVertical="2dp">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/tv_date_of_surgery"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
                 android:layout_margin="7dp"
+                android:gravity="center_vertical"
                 android:text="Date of Surgery* : "
                 android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/et_date_of_surgery"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
                 android:layout_margin="10dp"
+                android:layout_toRightOf="@id/tv_date_of_surgery"
                 android:background="@drawable/edittext_style"
-                android:hint="Date of Surgery "
+                android:gravity="center"
+                android:hint="dd/MM/yyyy"
+                android:inputType="date"
                 android:textAlignment="center" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:orientation="horizontal"
+            android:paddingVertical="2dp">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/tv_lens_model_used"
+                android:layout_width="160dp"
                 android:layout_height="match_parent"
                 android:layout_margin="7dp"
+                android:gravity="center_vertical"
                 android:text="Lens Model \nUsed : "
                 android:textSize="20sp" />
 
             <Spinner
                 android:id="@+id/spinner_lens_model"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"                >
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/tv_lens_model_used"
+                android:gravity="center">
 
             </Spinner>
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="120dp"
                 android:layout_height="match_parent"
-                android:gravity="right"
                 android:layout_margin="7dp"
-                android:text=" (please\n select)"
-                android:textSize="20sp" />
+                android:layout_toRightOf="@id/spinner_lens_model"
+                android:gravity="center"
+                android:text=" (please select)"
+                android:textSize="15sp" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:orientation="horizontal"
+            android:paddingVertical="2dp">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/tv_lens_power_used"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
                 android:layout_margin="7dp"
-                android:text="Lens Power \n Used : "
+                android:gravity="center_vertical"
+                android:text="Lens Power Used : "
                 android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/et_lens_power"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/edittext_style"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
                 android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/tv_lens_power_used"
+                android:background="@drawable/edittext_style"
+                android:gravity="center"
                 android:hint="Lens Power used"
                 android:textAlignment="center" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Dioptres"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="3dp"
                 android:layout_marginTop="7dp"
-                android:textSize="20sp" />
+                android:layout_toRightOf="@+id/et_lens_power"
+                android:gravity="center"
+                android:text="Dioptres"
+                android:textSize="15sp" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Surgical Complications, If Any : "
-            android:layout_margin="7dp"
-            android:textSize="20sp"
-            />
 
-        <EditText
-            android:id="@+id/et_surgical_complications"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="7dp"
-            android:hint="Surgical Complications (If Any)"
-            android:textAlignment="center"
-            android:background="@drawable/edittext_style"/>
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:orientation="horizontal"
+            android:paddingVertical="2dp">
+
+            <TextView
+                android:id="@+id/tv_surgical_complications"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7dp"
+                android:gravity="center_vertical"
+                android:text="Surgical Complications, If Any : "
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_surgical_complications"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7dp"
+                android:layout_toRightOf="@id/tv_surgical_complications"
+                android:background="@drawable/edittext_style"
+                android:gravity="center"
+                android:hint="Surgical Complications (If Any)"
+                android:textAlignment="center" />
+
+        </RelativeLayout>
 
         <Button
             android:id="@+id/btn_update"
@@ -269,8 +349,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
             android:layout_marginBottom="50dp"
             android:background="@drawable/round_corner_button_bg"
             android:text="Update"

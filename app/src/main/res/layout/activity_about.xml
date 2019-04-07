@@ -44,11 +44,36 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_marginBottom="50dp"
-            android:text="This app has been developed as a part of the ‘AI for Eye’ research initiative of Insight Eye Clinic, New Delhi and Netaji Subhas University of Technology, New Delhi.\n\nOphthalmologists:   Aashima Sawhney and Saurabh Sawhney\nSoftware architect:   Pinaki Chakraborty\nArtificial intelligence engineers:   Akshita Agarwal, Mansi Breja and Rahmeen Habib\nUser interaction engineers:   Arshia Kaul and Pooja\n\nFor more information, please write to saurabhsawhney@rediffmail.com.
-"
+            android:layout_marginBottom="10dp"
+            android:text="This app has been developed as a part of the ‘AI for Eye’ research initiative of Insight Eye Clinic, New Delhi and Netaji Subhas University of Technology, New Delhi."
             android:textColor="@color/title"
             android:textSize="15sp" />
+
+
+        <TextView
+            android:textColor="@color/title"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Ophthalmologists:   Aashima Sawhney and Saurabh Sawhney\nSoftware architect:   Pinaki Chakraborty\nArtificial intelligence engineers:   Akshita Agarwal, Mansi Breja and Rahmeen Habib\nUser interaction engineers:   Arshia Kaul and Pooja"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/title"
+            android:textSize="15sp"
+            android:text="For more information, please write to saurabhsawhney@rediffmail.com."/>
 
     </LinearLayout>
 

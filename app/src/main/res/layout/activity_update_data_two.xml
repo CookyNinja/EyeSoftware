@@ -51,155 +51,210 @@
             android:textSize="20sp" />
 
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:paddingVertical="2dp"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/tv_ref_no_display_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_marginTop="20dp"
-                android:text="Reference No. : "
+                android:text="Reference No.: "
+                android:gravity="center_vertical"
                 android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/tv_ref_no_display_value_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <EditText
+                android:id="@+id/et_ref_no_display_value_2"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                android:layout_marginTop="20dp"
-                android:text="XXXX"
-                android:textSize="20sp" />
+                android:layout_toRightOf="@id/tv_ref_no_display_2"
+                android:background="@drawable/edittext_style"
+                android:gravity="center"
+                android:hint="Name"
+                android:textAlignment="center" />
+        </RelativeLayout>
 
-        </LinearLayout>
-
-        <TextView
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:text="Name or Initials: "
-            android:textSize="20sp" />
-
-        <EditText
-            android:id="@+id/et_name_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@drawable/edittext_style"
-            android:hint="Name or Initials"
-            android:textAlignment="center" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:paddingVertical="2dp"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/tv_name_2"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
                 android:layout_margin="7dp"
+                android:gravity="center_vertical"
+                android:text="Name : "
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_name_2"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf = "@id/tv_name_2"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/edittext_style"
+                android:hint="Name"
+                android:textAlignment="center" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:paddingVertical="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_age_2"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7dp"
+                android:gravity="center_vertical"
                 android:text="Age : "
                 android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/et_age_2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
                 android:layout_margin="10dp"
+                android:layout_toRightOf = "@id/tv_age_2"
                 android:background="@drawable/edittext_style"
                 android:hint="Age"
+                android:gravity="center"
                 android:textAlignment="center" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:paddingVertical="2dp"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/tv_gender_2"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
                 android:layout_margin="7dp"
+                android:gravity="center_vertical"
                 android:text="Gender : "
                 android:textSize="20sp" />
 
             <Spinner
                 android:id="@+id/spinner_gender_2"
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="7dp"
-                android:layout_marginRight="20dp">
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:layout_toRightOf="@id/tv_gender_2">
 
             </Spinner>
 
-        </LinearLayout>
+        </RelativeLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:paddingVertical="2dp"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/tv_eye_2"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
                 android:layout_margin="7dp"
                 android:text="Eye* : "
                 android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/et_eye_2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:background="@drawable/edittext_style"
                 android:hint="Eye"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_toRightOf= "@id/tv_eye_2"/>
 
-        </LinearLayout>
+        </RelativeLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:paddingVertical="2dp"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/tv_date_of_follow_up_2"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
                 android:layout_margin="7dp"
                 android:text="Date of Follow-Up* : "
                 android:textSize="20sp" />
 
+
+
             <EditText
                 android:id="@+id/et_date_of_follow_up"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
                 android:layout_margin="10dp"
+                android:inputType=""
                 android:background="@drawable/edittext_style"
-                android:hint="Date of Follow-Up "
-                android:textAlignment="center" />
+                android:hint="dd/MM/yyyy"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_toRightOf= "@id/tv_date_of_follow_up_2"/>
 
-        </LinearLayout>
+        </RelativeLayout>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="match_parent"
             android:layout_margin="7dp"
             android:text="Refractive Error :  "
             android:textSize="20sp" />
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:paddingVertical="2dp"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/tv_spherical_2"
+                android:layout_width="150dp"
                 android:layout_height="match_parent"
+                android:gravity="center_vertical"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="7dp"
                 android:layout_marginRight="7dp"
@@ -208,32 +263,41 @@
 
             <EditText
                 android:id="@+id/et_spherical_refractive_error"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
                 android:layout_marginTop="7dp"
                 android:layout_marginLeft="4dp"
                 android:background="@drawable/edittext_style"
                 android:hint="Refractive Error"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_toRightOf= "@id/tv_spherical_2"/>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="90dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="7dp"
                 android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"
                 android:text="Dioptres"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/et_spherical_refractive_error"/>
 
-        </LinearLayout>
+        </RelativeLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:paddingVertical="2dp"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/tv_cylindrical_2"
+                android:layout_width="150dp"
                 android:layout_height="match_parent"
+                android:gravity="center_vertical"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="7dp"
                 android:layout_marginRight="7dp"
@@ -242,24 +306,28 @@
 
             <EditText
                 android:id="@+id/et_cylindrical_refractive_error"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
                 android:layout_marginTop="7dp"
                 android:layout_marginLeft="4dp"
                 android:background="@drawable/edittext_style"
                 android:hint="Refractive Error"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_toRightOf= "@id/tv_cylindrical_2"/>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="90dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="7dp"
                 android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@id/et_cylindrical_refractive_error"
                 android:text="Dioptres"
                 android:textSize="20sp" />
 
 
-        </LinearLayout>
+        </RelativeLayout>
 
         <Button
             android:id="@+id/btn_update_2"

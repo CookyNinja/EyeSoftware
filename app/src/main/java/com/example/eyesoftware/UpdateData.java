@@ -32,7 +32,7 @@ public class UpdateData extends AppCompatActivity {
         });
 
         // Spinner element
-        Spinner spinner_gender = findViewById(R.id.spinner_gender);
+        Spinner spinner_gender = findViewById(R.id.spinner_gender_1);
         Spinner spinner_lens_model = findViewById(R.id.spinner_lens_model);
 
         // Spinner Drop down elements for gender spinner
