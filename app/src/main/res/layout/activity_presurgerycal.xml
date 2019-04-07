@@ -57,97 +57,100 @@
                     android:textSize="18sp"
                     android:layout_marginVertical="2dp"/>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_marginVertical="2dp">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/kone_text"
+                        android:layout_width="150dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
+                        android:gravity="left"
                         android:text="K1* :"
                         android:textSize="14sp" />
 
                     <EditText
-                        android:layout_width="wrap_content"
+                        android:id="@+id/kone_input"
+                        android:layout_width="120dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="2"
                         android:gravity="center"
+                        android:layout_toRightOf="@+id/kone_text"
                         android:hint="Keratometry K1"
                         android:inputType="numberDecimal"
                         android:textSize="14sp"
                         android:background="@drawable/edittext_style"/>
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="90dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="2"
+                        android:layout_toRightOf="@+id/kone_input"
                         android:gravity="center"
                         android:text="Dioptres"
                         android:textSize="14sp" />
 
-                </LinearLayout>
+                </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_marginVertical="2dp">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/ktwo_text"
+                        android:layout_width="150dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
+                        android:gravity="left"
                         android:text="K2* :"
                         android:textSize="14sp" />
 
                     <EditText
-                        android:layout_width="wrap_content"
+                        android:id="@+id/ktwo_input"
+                        android:layout_width="120dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="2"
                         android:gravity="center"
+                        android:layout_toRightOf="@+id/ktwo_text"
                         android:hint="Keratometry K2"
                         android:inputType="numberDecimal"
                         android:textSize="14sp"
                         android:background="@drawable/edittext_style"/>
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="90dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="2"
+                        android:layout_toRightOf="@+id/ktwo_input"
                         android:gravity="center"
                         android:text="Dioptres"
                         android:textSize="14sp" />
 
-                </LinearLayout>
+                </RelativeLayout>
 
             </LinearLayout>
 
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="left"
+                android:layout_gravity="center"
                 android:layout_marginVertical="5dp"
                 android:paddingVertical="2dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/axial_length_text"
+                    android:layout_width="150dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:text="Axial Length* :"
                     android:textSize="18sp"/>
 
                 <EditText
-                    android:layout_width="wrap_content"
+                    android:id="@+id/axial_length_input"
+                    android:layout_width="120dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    android:layout_toRightOf="@+id/axial_length_text"
                     android:gravity="center"
                     android:hint="Axial Length"
                     android:inputType="numberDecimal"
@@ -155,17 +158,17 @@
                     android:background="@drawable/edittext_style"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="50dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
                     android:gravity="center_vertical"
-                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/axial_length_input"
+                    android:layout_marginLeft="5dp"
                     android:text="(mm)"
                     android:textSize="18sp" />
 
-            </LinearLayout>
+            </RelativeLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="5dp"
@@ -173,17 +176,18 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/ac_depth_text"
+                    android:layout_width="150dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:text="AC Depth :"
                     android:textSize="18sp" />
 
                 <EditText
-                    android:layout_width="wrap_content"
+                    android:id="@+id/ac_depth_input"
+                    android:layout_width="120dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    android:layout_toRightOf="@+id/ac_depth_text"
                     android:gravity="center"
                     android:hint="AC Depth"
                     android:inputType="numberDecimal"
@@ -191,17 +195,17 @@
                     android:background="@drawable/edittext_style"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="50dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    android:layout_toRightOf="@id/ac_depth_input"
                     android:gravity="center_vertical"
                     android:layout_marginLeft="4dp"
                     android:text="(mm)"
                     android:textSize="18sp" />
 
-            </LinearLayout>
+            </RelativeLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="5dp"
@@ -209,35 +213,36 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/lens_thickness_text"
+                    android:layout_width="150dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:text="Lens Thickness :"
                     android:textSize="18sp" />
 
                 <EditText
-                    android:layout_width="wrap_content"
+                    android:id="@+id/lens_thickness_input"
+                    android:layout_width="120dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
                     android:gravity="center"
+                    android:layout_toRightOf="@+id/lens_thickness_text"
                     android:hint="Lens Thickness"
                     android:inputType="numberDecimal"
                     android:textSize="18sp"
                     android:background="@drawable/edittext_style"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="50dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    android:layout_toRightOf="@+id/lens_thickness_input"
                     android:gravity="center_vertical"
                     android:layout_marginLeft="4dp"
                     android:text="(mm)"
                     android:textSize="18sp" />
 
-            </LinearLayout>
+            </RelativeLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="5dp"
@@ -245,33 +250,34 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/wtow_text"
+                    android:layout_width="150dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:text="White-to-white :"
                     android:textSize="18sp" />
 
                 <EditText
-                    android:layout_width="wrap_content"
+                    android:id="@+id/wtow_input"
+                    android:layout_width="120dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
                     android:gravity="center"
+                    android:layout_toRightOf="@+id/wtow_text"
                     android:hint="White-to-white"
                     android:inputType="numberDecimal"
                     android:textSize="18sp"
                     android:background="@drawable/edittext_style"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="50dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
                     android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/wtow_input"
                     android:gravity="center_vertical"
                     android:text="(mm)"
                     android:textSize="18sp" />
 
-            </LinearLayout>
+            </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -287,58 +293,60 @@
                     android:textSize="18sp"
                     android:layout_marginVertical="2dp"/>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_marginVertical="2dp">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/spherical_text"
+                        android:layout_width="150dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
+                        android:gravity="left"
                         android:text="Spherical :"
                         android:textSize="14sp" />
 
                     <EditText
-                        android:layout_width="wrap_content"
+                        android:id="@+id/spherical_input"
+                        android:layout_width="120dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="2"
                         android:gravity="center"
+                        android:layout_toRightOf="@+id/spherical_text"
                         android:hint="Spherical"
                         android:inputType="numberDecimal"
                         android:textSize="14sp"
                         android:background="@drawable/edittext_style"/>
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="90dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="2"
+                        android:layout_toRightOf="@+id/spherical_input"
                         android:gravity="center"
                         android:text="Dioptres"
                         android:textSize="14sp" />
 
-                </LinearLayout>
+                </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_marginVertical="2dp">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/cylindrical_text"
+                        android:layout_width="150dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
+                        android:gravity="left"
                         android:text="Cylindrical :"
                         android:textSize="14sp" />
 
                     <EditText
-                        android:layout_width="wrap_content"
+                        android:id="@+id/cylindrical_input"
+                        android:layout_width="120dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="2"
+                        android:layout_toRightOf="@+id/cylindrical_text"
                         android:gravity="center"
                         android:hint="Cylindrical"
                         android:inputType="numberDecimal"
@@ -346,18 +354,18 @@
                         android:background="@drawable/edittext_style"/>
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="90dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="2"
+                        android:layout_toRightOf="@+id/cylindrical_input"
                         android:gravity="center"
                         android:text="Dioptres"
                         android:textSize="14sp" />
 
-                </LinearLayout>
+                </RelativeLayout>
 
             </LinearLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
@@ -366,29 +374,29 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/lens_model_text"
+                    android:layout_width="150dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="3"
                     android:gravity="center_vertical"
                     android:text="Lens Model* :"
                     android:textSize="18sp" />
 
                 <Spinner
                     android:id="@+id/spinner"
-                    android:layout_width="wrap_content"
+                    android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
+                    android:layout_toRightOf="@id/lens_model_text"
                     android:prompt="@string/please_select" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="3"
+                    android:layout_toRightOf="@+id/spinner"
                     android:gravity="center_vertical"
                     android:text="@string/please_select"
-                    android:textSize="18sp" />
+                    android:textSize="14sp" />
 
-            </LinearLayout>
+            </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -417,17 +425,15 @@
                         android:layout_marginVertical="2dp">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="150dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
+                            android:gravity="left"
                             android:text="A Constant SRK/T :"
                             android:textSize="14sp" />
 
                         <EditText
-                            android:layout_width="wrap_content"
+                            android:layout_width="120dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
                             android:gravity="center"
                             android:hint="A Constant SRK/T"
                             android:inputType="numberDecimal"
@@ -443,17 +449,15 @@
                         android:layout_marginVertical="2dp">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="150dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
+                            android:gravity="left"
                             android:text="pACD :"
                             android:textSize="14sp" />
 
                         <EditText
-                            android:layout_width="wrap_content"
+                            android:layout_width="120dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
                             android:gravity="center"
                             android:hint="pACD"
                             android:inputType="numberDecimal"
@@ -469,17 +473,15 @@
                         android:layout_marginVertical="2dp">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="150dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
+                            android:gravity="left"
                             android:text="Haigis a0 :"
                             android:textSize="14sp" />
 
                         <EditText
-                            android:layout_width="wrap_content"
+                            android:layout_width="120dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
                             android:gravity="center"
                             android:hint="Haigis a0"
                             android:inputType="numberDecimal"
@@ -495,17 +497,15 @@
                         android:layout_marginVertical="2dp">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="150dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
+                            android:gravity="left"
                             android:text="Haigis a1 :"
                             android:textSize="14sp" />
 
                         <EditText
-                            android:layout_width="wrap_content"
+                            android:layout_width="120dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
                             android:gravity="center"
                             android:hint="Haigis a1"
                             android:inputType="numberDecimal"
@@ -521,17 +521,15 @@
                         android:layout_marginVertical="2dp">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="150dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
+                            android:gravity="left"
                             android:text="Haigis a2 :"
                             android:textSize="14sp" />
 
                         <EditText
-                            android:layout_width="wrap_content"
+                            android:layout_width="120dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
                             android:gravity="center"
                             android:hint="Haigis a2"
                             android:inputType="numberDecimal"
@@ -556,7 +554,8 @@
             android:layout_gravity="center"
             android:textSize="24sp"
             android:padding="10dp"
-            android:layout_marginVertical="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
             android:background="@drawable/round_corner_button_bg"
             android:textColor="@android:color/white"/>
 
