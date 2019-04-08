@@ -2,19 +2,19 @@
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/gradient"
         android:gravity="center"
-        android:orientation="vertical"
-        android:background="@drawable/gradient">
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
             android:orientation="horizontal">
 
             <TextView
@@ -23,192 +23,199 @@
                 android:layout_marginVertical="10dp"
                 android:layout_weight="2"
                 android:text="Enter Patient Details"
-                android:textStyle="bold"
                 android:textAlignment="center"
+                android:textColor="@color/title"
                 android:textSize="30sp"
-                android:textColor="@color/title"/>
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="7dp"
                 android:layout_weight="5"
-                android:src="@mipmap/logo"/>
+                android:src="@mipmap/logo" />
 
         </LinearLayout>
 
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:paddingHorizontal="5dp">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:orientation="horizontal"
+            android:paddingVertical="2dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="left"
-                android:layout_marginVertical="10dp">
+            <TextView
+                android:id="@+id/tv_ref_no_display_3"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:gravity="center_vertical"
+                android:text="Reference Number* :"
+                android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center_vertical"
-                    android:text="Reference Number* :"
-                    android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/et_ref_no_display_value_3"
+                android:layout_width="120dp"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/tv_ref_no_display_3"
+                android:background="@drawable/edittext_style"
+                android:gravity="center"
+                android:hint="Reference Number"
+                android:textSize="13sp" />
 
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    android:gravity="center"
-                    android:hint="Reference Number"
-                    android:textSize="18sp"
-                    android:background="@drawable/edittext_style"/>
+        </RelativeLayout>
 
-            </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:orientation="horizontal"
+            android:paddingVertical="2dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="left"
-                android:layout_marginVertical="10dp">
+            <TextView
+                android:id="@+id/tv_name_3"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="7dp"
+                android:text="Name :"
+                android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center_vertical"
-                    android:text="Name :"
-                    android:textSize="18sp" />
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/tv_name_3"
+                android:background="@drawable/edittext_style"
+                android:gravity="center"
+                android:hint="Name"
+                android:textSize="18sp" />
 
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="6"
-                    android:gravity="center"
-                    android:hint="Name"
-                    android:textSize="18sp"
-                    android:background="@drawable/edittext_style"/>
+        </RelativeLayout>
 
-            </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:orientation="horizontal"
+            android:paddingVertical="2dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="left"
-                android:layout_marginVertical="10dp">
+            <TextView
+                android:id="@+id/tv_age_3"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:gravity="center_vertical"
+                android:text="Age :"
+                android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center_vertical"
-                    android:text="Age :"
-                    android:textSize="18sp" />
+            <EditText
+                android:id="@+id/et_age_3"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/tv_age_3"
+                android:background="@drawable/edittext_style"
+                android:gravity="center"
+                android:hint="Age"
+                android:inputType="numberDecimal"
+                android:textSize="18sp" />
 
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    android:gravity="center"
-                    android:hint="Age"
-                    android:inputType="numberDecimal"
-                    android:textSize="18sp"
-                    android:background="@drawable/edittext_style"/>
+            <TextView
+                android:layout_toRightOf="@id/et_age_3"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:text="years"
+                android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    android:gravity="left"
-                    android:layout_marginLeft="4dp"
-                    android:text="years"
-                    android:textSize="18sp" />
+        </RelativeLayout>
 
-            </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:orientation="horizontal"
+            android:paddingVertical="2dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="left"
-                android:layout_marginVertical="10dp">
+            <TextView
+                android:id="@+id/tv_gender_3"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="7dp"
+                android:text="Gender :"
+                android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center_vertical"
-                    android:text="Gender :"
-                    android:textSize="18sp" />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/tv_gender_3"
+                android:gravity="center" />
 
-                <Spinner
-                    android:id="@+id/spinner"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="left"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/spinner"
+                android:text="@string/please_select" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/please_select"
-                    android:layout_weight="1"/>
+        </RelativeLayout>
 
-            </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:orientation="horizontal"
+            android:paddingVertical="2dp"
+           >
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="left"
-                android:layout_marginVertical="10dp">
+            <TextView
+                android:id="@+id/tv_eye_3"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:gravity="center_vertical"
+                android:text="Eye* :"
+                android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center_vertical"
-                    android:text="Eye* :"
-                    android:textSize="18sp" />
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/tv_eye_3"
+                android:gravity="center" />
 
-                <Spinner
-                    android:id="@+id/spinner2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="left"/>
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/spinner2"
+                android:text="@string/please_select" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/please_select"
-                    android:layout_weight="1"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
+        </RelativeLayout>
 
         <Button
             android:id="@+id/btn_save"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Save"
             android:layout_gravity="center"
-            android:textSize="24sp"
-            android:padding="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
             android:background="@drawable/round_corner_button_bg"
-            android:textColor="@android:color/white"/>
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
 
     </LinearLayout>
-
 
 
 </ScrollView>

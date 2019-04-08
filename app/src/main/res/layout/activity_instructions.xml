@@ -24,7 +24,7 @@
                 android:layout_margin="20dp"
                 android:text="Instructions"
                 android:textColor="@color/title"
-                android:textSize="28sp"
+                android:textSize="30sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -41,15 +41,116 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+
+            android:text="This app is meant to be used by ophthalmologists. This app uses artificial intelligence to recommend the power of the intraocular lens to be used in a cataract surgery."
+            android:textColor="@color/title"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Pre-surgery calculations:"
+            android:textStyle="bold"
+            android:textColor="@color/title"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginBottom="50dp"
-            android:text="This app is meant to be used by ophthalmologists. This app uses artificial intelligence to recommend the power of the intraocular lens to be used in a cataract surgery.\n\nPre-surgery calculations: A surgeon may use this page before the surgery to calculate the power of the intraocular lens to be given to a patient.\n\nSurgery-day data entry: A surgeon may use this page to enter information just after conducting a surgery.\n\nPost-surgery follow-up: A surgeon may use this page to enter the post-surgery refractive error on the day a patient comes for a follow-up.\n\nThis app uses artificial intelligence and improves by studying the data submitted by surgeons.
-
-"
+            android:text="A surgeon may use this page before the surgery to calculate the power of the intraocular lens to be given to a patient."
             android:textColor="@color/title"
             android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:text="Surgery-day data entry:"
+            android:textColor="@color/title"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="A surgeon may use this page to enter information just after conducting a surgery."
+            android:textColor="@color/title"
+            android:textSize="15sp" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:text="Post-surgery follow-up:"
+            android:textColor="@color/title"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="A surgeon may use this page to enter the post-surgery refractive error on the day a patient comes for a follow-up."
+            android:textColor="@color/title"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="50dp"
+            android:text="This app uses artificial intelligence and improves by studying the data submitted by surgeons."
+            android:textColor="@color/title"
+            android:textSize="15sp" />
+
+
+
+        <Button
+            android:id="@+id/btn_back_to_menu_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/round_corner_button_bg"
+            android:text="Back to menu"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
 
     </LinearLayout>
 

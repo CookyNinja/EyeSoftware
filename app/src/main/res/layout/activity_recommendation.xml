@@ -3,7 +3,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+
     android:orientation="vertical"
     android:background="@drawable/gradient">
 
@@ -52,7 +52,7 @@
                 android:layout_weight="3"
                 android:gravity="right"
                 android:text="AI4I Model:"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -60,7 +60,7 @@
                 android:layout_weight="2"
                 android:gravity="center"
                 android:text="xxx Dioptres"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -77,7 +77,7 @@
                 android:layout_weight="3"
                 android:gravity="right"
                 android:text="SRK/T:"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -85,7 +85,7 @@
                 android:layout_weight="2"
                 android:gravity="center"
                 android:text="xxx Dioptres"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -102,7 +102,7 @@
                 android:layout_weight="3"
                 android:gravity="right"
                 android:text="Holladay-1:"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -110,7 +110,7 @@
                 android:layout_weight="2"
                 android:gravity="center"
                 android:text="xxx Dioptres"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -127,7 +127,7 @@
                 android:layout_weight="3"
                 android:gravity="right"
                 android:text="Hoffer-Q:"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -135,7 +135,7 @@
                 android:layout_weight="2"
                 android:gravity="center"
                 android:text="xxx Dioptres"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -144,6 +144,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
             android:layout_marginVertical="5dp"
+
             android:orientation="horizontal">
 
             <TextView
@@ -152,7 +153,7 @@
                 android:layout_weight="3"
                 android:gravity="right"
                 android:text="Haigis:"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -160,7 +161,7 @@
                 android:layout_weight="2"
                 android:gravity="center"
                 android:text="xxx Dioptres"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -169,11 +170,13 @@
 
     <Button
         android:id="@+id/btn_save_data"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Save Data"
         android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
         android:textSize="24sp"
         android:padding="10dp"
         android:layout_marginVertical="10dp"

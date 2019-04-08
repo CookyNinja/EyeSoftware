@@ -23,7 +23,7 @@
             android:paddingLeft="5dp"
             android:text="Surgery-day Data Entry"
             android:textColor="@color/title"
-            android:textSize="28sp" />
+            android:textSize="30sp" />
 
 
         <ImageView
@@ -42,7 +42,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
         android:text="Enter Reference Number of Patient* : "
-        android:textSize="20dp" />
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/et_reference_number"
@@ -58,9 +58,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="40dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="40dp"
         android:background="@drawable/round_corner_button_bg"
         android:text="Submit"
         android:textColor="@android:color/white"

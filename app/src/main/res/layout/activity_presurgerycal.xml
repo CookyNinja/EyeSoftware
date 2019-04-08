@@ -27,7 +27,7 @@
                 android:layout_weight="2"
                 android:text="Enter Data on the Eye"
                 android:textStyle="bold"
-                android:textSize="28sp"
+                android:textSize="30sp"
                 android:textColor="@color/title"/>
 
             <ImageView
@@ -65,11 +65,12 @@
 
                     <TextView
                         android:id="@+id/kone_text"
-                        android:layout_width="150dp"
+                        android:layout_width="110dp"
                         android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
                         android:gravity="left"
                         android:text="K1* :"
-                        android:textSize="14sp" />
+                        android:textSize="18sp" />
 
                     <EditText
                         android:id="@+id/kone_input"
@@ -79,7 +80,7 @@
                         android:layout_toRightOf="@+id/kone_text"
                         android:hint="Keratometry K1"
                         android:inputType="numberDecimal"
-                        android:textSize="14sp"
+                        android:textSize="18sp"
                         android:background="@drawable/edittext_style"/>
 
                     <TextView
@@ -88,7 +89,7 @@
                         android:layout_toRightOf="@+id/kone_input"
                         android:gravity="center"
                         android:text="Dioptres"
-                        android:textSize="14sp" />
+                        android:textSize="18sp" />
 
                 </RelativeLayout>
 
@@ -100,11 +101,12 @@
 
                     <TextView
                         android:id="@+id/ktwo_text"
-                        android:layout_width="150dp"
+                        android:layout_width="110dp"
                         android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
                         android:gravity="left"
                         android:text="K2* :"
-                        android:textSize="14sp" />
+                        android:textSize="18sp" />
 
                     <EditText
                         android:id="@+id/ktwo_input"
@@ -114,7 +116,7 @@
                         android:layout_toRightOf="@+id/ktwo_text"
                         android:hint="Keratometry K2"
                         android:inputType="numberDecimal"
-                        android:textSize="14sp"
+                        android:textSize="18sp"
                         android:background="@drawable/edittext_style"/>
 
                     <TextView
@@ -123,7 +125,7 @@
                         android:layout_toRightOf="@+id/ktwo_input"
                         android:gravity="center"
                         android:text="Dioptres"
-                        android:textSize="14sp" />
+                        android:textSize="18sp" />
 
                 </RelativeLayout>
 
@@ -163,7 +165,7 @@
                     android:gravity="center_vertical"
                     android:layout_toRightOf="@+id/axial_length_input"
                     android:layout_marginLeft="5dp"
-                    android:text="(mm)"
+                    android:text="mm"
                     android:textSize="18sp" />
 
             </RelativeLayout>
@@ -200,7 +202,7 @@
                     android:layout_toRightOf="@id/ac_depth_input"
                     android:gravity="center_vertical"
                     android:layout_marginLeft="4dp"
-                    android:text="(mm)"
+                    android:text="mm"
                     android:textSize="18sp" />
 
             </RelativeLayout>
@@ -237,7 +239,7 @@
                     android:layout_toRightOf="@+id/lens_thickness_input"
                     android:gravity="center_vertical"
                     android:layout_marginLeft="4dp"
-                    android:text="(mm)"
+                    android:text="mm"
                     android:textSize="18sp" />
 
             </RelativeLayout>
@@ -274,7 +276,7 @@
                     android:layout_marginLeft="4dp"
                     android:layout_toRightOf="@+id/wtow_input"
                     android:gravity="center_vertical"
-                    android:text="(mm)"
+                    android:text="mm"
                     android:textSize="18sp" />
 
             </RelativeLayout>
@@ -301,11 +303,12 @@
 
                     <TextView
                         android:id="@+id/spherical_text"
-                        android:layout_width="150dp"
+                        android:layout_width="110dp"
                         android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
                         android:gravity="left"
                         android:text="Spherical :"
-                        android:textSize="14sp" />
+                        android:textSize="18sp" />
 
                     <EditText
                         android:id="@+id/spherical_input"
@@ -315,7 +318,7 @@
                         android:layout_toRightOf="@+id/spherical_text"
                         android:hint="Spherical"
                         android:inputType="numberDecimal"
-                        android:textSize="14sp"
+                        android:textSize="18sp"
                         android:background="@drawable/edittext_style"/>
 
                     <TextView
@@ -324,7 +327,7 @@
                         android:layout_toRightOf="@+id/spherical_input"
                         android:gravity="center"
                         android:text="Dioptres"
-                        android:textSize="14sp" />
+                        android:textSize="18sp" />
 
                 </RelativeLayout>
 
@@ -336,11 +339,12 @@
 
                     <TextView
                         android:id="@+id/cylindrical_text"
-                        android:layout_width="150dp"
+                        android:layout_width="110dp"
                         android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
                         android:gravity="left"
                         android:text="Cylindrical :"
-                        android:textSize="14sp" />
+                        android:textSize="18sp" />
 
                     <EditText
                         android:id="@+id/cylindrical_input"
@@ -350,7 +354,7 @@
                         android:gravity="center"
                         android:hint="Cylindrical"
                         android:inputType="numberDecimal"
-                        android:textSize="14sp"
+                        android:textSize="18sp"
                         android:background="@drawable/edittext_style"/>
 
                     <TextView
@@ -359,7 +363,7 @@
                         android:layout_toRightOf="@+id/cylindrical_input"
                         android:gravity="center"
                         android:text="Dioptres"
-                        android:textSize="14sp" />
+                        android:textSize="18sp" />
 
                 </RelativeLayout>
 
@@ -394,7 +398,7 @@
                     android:layout_toRightOf="@+id/spinner"
                     android:gravity="center_vertical"
                     android:text="@string/please_select"
-                    android:textSize="14sp" />
+                    android:textSize="18sp" />
 
             </RelativeLayout>
 
@@ -425,11 +429,12 @@
                         android:layout_marginVertical="2dp">
 
                         <TextView
-                            android:layout_width="150dp"
+                            android:layout_width="110dp"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="40dp"
                             android:gravity="left"
                             android:text="A Constant SRK/T :"
-                            android:textSize="14sp" />
+                            android:textSize="18sp" />
 
                         <EditText
                             android:layout_width="120dp"
@@ -437,7 +442,7 @@
                             android:gravity="center"
                             android:hint="A Constant SRK/T"
                             android:inputType="numberDecimal"
-                            android:textSize="14sp"
+                            android:textSize="18sp"
                             android:background="@drawable/edittext_style"/>
 
                     </LinearLayout>
@@ -449,11 +454,12 @@
                         android:layout_marginVertical="2dp">
 
                         <TextView
-                            android:layout_width="150dp"
+                            android:layout_width="110dp"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="40dp"
                             android:gravity="left"
                             android:text="pACD :"
-                            android:textSize="14sp" />
+                            android:textSize="18sp" />
 
                         <EditText
                             android:layout_width="120dp"
@@ -461,7 +467,7 @@
                             android:gravity="center"
                             android:hint="pACD"
                             android:inputType="numberDecimal"
-                            android:textSize="14sp"
+                            android:textSize="18sp"
                             android:background="@drawable/edittext_style"/>
 
                     </LinearLayout>
@@ -473,11 +479,12 @@
                         android:layout_marginVertical="2dp">
 
                         <TextView
-                            android:layout_width="150dp"
+                            android:layout_width="110dp"
                             android:layout_height="match_parent"
                             android:gravity="left"
+                            android:layout_marginLeft="40dp"
                             android:text="Haigis a0 :"
-                            android:textSize="14sp" />
+                            android:textSize="18sp" />
 
                         <EditText
                             android:layout_width="120dp"
@@ -485,7 +492,7 @@
                             android:gravity="center"
                             android:hint="Haigis a0"
                             android:inputType="numberDecimal"
-                            android:textSize="14sp"
+                            android:textSize="18sp"
                             android:background="@drawable/edittext_style"/>
 
                     </LinearLayout>
@@ -497,11 +504,12 @@
                         android:layout_marginVertical="2dp">
 
                         <TextView
-                            android:layout_width="150dp"
+                            android:layout_width="110dp"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="40dp"
                             android:gravity="left"
                             android:text="Haigis a1 :"
-                            android:textSize="14sp" />
+                            android:textSize="18sp" />
 
                         <EditText
                             android:layout_width="120dp"
@@ -509,7 +517,7 @@
                             android:gravity="center"
                             android:hint="Haigis a1"
                             android:inputType="numberDecimal"
-                            android:textSize="14sp"
+                            android:textSize="18sp"
                             android:background="@drawable/edittext_style"/>
 
                     </LinearLayout>
@@ -521,11 +529,12 @@
                         android:layout_marginVertical="2dp">
 
                         <TextView
-                            android:layout_width="150dp"
+                            android:layout_width="110dp"
+                            android:layout_marginLeft="40dp"
                             android:layout_height="match_parent"
                             android:gravity="left"
                             android:text="Haigis a2 :"
-                            android:textSize="14sp" />
+                            android:textSize="18sp" />
 
                         <EditText
                             android:layout_width="120dp"
@@ -533,7 +542,7 @@
                             android:gravity="center"
                             android:hint="Haigis a2"
                             android:inputType="numberDecimal"
-                            android:textSize="14sp"
+                            android:textSize="18sp"
                             android:background="@drawable/edittext_style"/>
 
                     </LinearLayout>
@@ -547,7 +556,7 @@
 
         <Button
             android:id="@+id/btn_quick_calc"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Quick Calculate"
@@ -556,17 +565,21 @@
             android:padding="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
             android:background="@drawable/round_corner_button_bg"
             android:textColor="@android:color/white"/>
 
         <Button
             android:id="@+id/btn_reset"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Reset"
             android:layout_gravity="center"
             android:textSize="24sp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
             android:padding="10dp"
             android:layout_marginVertical="15dp"
             android:background="@drawable/round_corner_button_bg"

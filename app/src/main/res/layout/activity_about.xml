@@ -24,7 +24,7 @@
                 android:layout_margin="20dp"
                 android:text="About"
                 android:textColor="@color/title"
-                android:textSize="28sp"
+                android:textSize="30sp"
                 android:textStyle="bold" />
 
 
@@ -50,17 +50,158 @@
             android:textSize="15sp" />
 
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:paddingVertical="2dp"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_opthomologists"
+            android:textColor="@color/title"
+            android:textSize="15sp"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:text="Ophthalmologists: "
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+
+
         <TextView
             android:textColor="@color/title"
             android:textSize="15sp"
+            android:layout_width="140dp"
+            android:layout_toRightOf="@id/tv_opthomologists"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="Aashima Sawhney  Saurabh Sawhney"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:paddingVertical="2dp"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_software_architect"
+            android:textColor="@color/title"
+            android:textSize="15sp"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:text="Software architect:"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:textColor="@color/title"
+            android:textSize="15sp"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_software_architect"
+            android:layout_gravity="center"
+            android:text="Pinaki Chakraborty"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:paddingVertical="2dp"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_artificial_engg"
+            android:textColor="@color/title"
+            android:textSize="15sp"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="Artificial intelligence engineers:"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:textColor="@color/title"
+            android:textSize="15sp"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_artificial_engg"
+            android:layout_gravity="center"
+            android:text="Akshita Agarwal Mansi Breja  Rahmeen Habib"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:paddingVertical="2dp"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_user_interaction_engg"
+            android:textColor="@color/title"
+            android:textSize="15sp"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:text="User interaction engineers:"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:textColor="@color/title"
+            android:textSize="15sp"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_user_interaction_engg"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-            android:text="Ophthalmologists:   Aashima Sawhney and Saurabh Sawhney\nSoftware architect:   Pinaki Chakraborty\nArtificial intelligence engineers:   Akshita Agarwal, Mansi Breja and Rahmeen Habib\nUser interaction engineers:   Arshia Kaul and Pooja"/>
+            android:text="Arshia Kaul  Pooja"/>
+
+        </RelativeLayout>
 
 
         <TextView
@@ -74,6 +215,19 @@
             android:textColor="@color/title"
             android:textSize="15sp"
             android:text="For more information, please write to saurabhsawhney@rediffmail.com."/>
+
+        <Button
+            android:id="@+id/btn_back_to_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/round_corner_button_bg"
+            android:text="Back to menu"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
