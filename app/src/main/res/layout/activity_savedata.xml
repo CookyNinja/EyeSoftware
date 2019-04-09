@@ -2,17 +2,18 @@
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/gradient"
-        android:gravity="center"
         android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="40dp"
             android:orientation="horizontal">
@@ -49,7 +50,7 @@
             <TextView
                 android:id="@+id/tv_ref_no_display_3"
                 android:layout_width="150dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="7dp"
                 android:gravity="center_vertical"
                 android:text="Reference Number* :"
@@ -59,7 +60,7 @@
                 android:id="@+id/et_ref_no_display_value_3"
                 android:layout_width="120dp"
                 android:padding="5dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/tv_ref_no_display_3"
                 android:background="@drawable/edittext_style"
                 android:gravity="center"
@@ -79,7 +80,7 @@
             <TextView
                 android:id="@+id/tv_name_3"
                 android:layout_width="150dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:layout_marginLeft="7dp"
                 android:text="Name :"
@@ -87,7 +88,7 @@
 
             <EditText
                 android:layout_width="120dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/tv_name_3"
                 android:background="@drawable/edittext_style"
                 android:gravity="center"
@@ -107,7 +108,7 @@
             <TextView
                 android:id="@+id/tv_age_3"
                 android:layout_width="150dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="7dp"
                 android:gravity="center_vertical"
                 android:text="Age :"
@@ -116,7 +117,7 @@
             <EditText
                 android:id="@+id/et_age_3"
                 android:layout_width="120dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/tv_age_3"
                 android:background="@drawable/edittext_style"
                 android:gravity="center"
@@ -127,7 +128,7 @@
             <TextView
                 android:layout_toRightOf="@id/et_age_3"
                 android:layout_width="120dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:text="years"
                 android:textSize="18sp" />
@@ -145,7 +146,7 @@
             <TextView
                 android:id="@+id/tv_gender_3"
                 android:layout_width="150dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:layout_marginLeft="7dp"
                 android:text="Gender :"
@@ -154,13 +155,13 @@
             <Spinner
                 android:id="@+id/spinner"
                 android:layout_width="120dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/tv_gender_3"
                 android:gravity="center" />
 
             <TextView
                 android:layout_width="120dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/spinner"
                 android:text="@string/please_select" />
 
@@ -178,7 +179,7 @@
             <TextView
                 android:id="@+id/tv_eye_3"
                 android:layout_width="150dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="7dp"
                 android:gravity="center_vertical"
                 android:text="Eye* :"
@@ -187,13 +188,13 @@
             <Spinner
                 android:id="@+id/spinner2"
                 android:layout_width="120dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/tv_eye_3"
                 android:gravity="center" />
 
             <TextView
                 android:layout_width="120dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/spinner2"
                 android:text="@string/please_select" />
 
