@@ -78,6 +78,7 @@ public class UpdateData extends AppCompatActivity {
         // Spinner element
         Spinner spinner_gender = findViewById(R.id.spinner_gender_1);
         Spinner spinner_lens_model = findViewById(R.id.spinner_lens_model);
+        Spinner spinner_eye = (Spinner) findViewById(R.id.spinner_eye);
 
         // Spinner Drop down elements for gender spinner
 
@@ -94,18 +95,28 @@ public class UpdateData extends AppCompatActivity {
         lens_model_categories.add("Model 3");
         lens_model_categories.add("Others");
 
+        // Spinner Drop down elements for eye spinner
+
+        List<String> eye_categories = new ArrayList<String>();
+        eye_categories.add("Left");
+        eye_categories.add("Right");
+
+
         // Creating adapter for spinner
         ArrayAdapter<String>dataAdapter_gender = new ArrayAdapter<>(UpdateData.this, android.R.layout.simple_spinner_item, gender_categories );
         ArrayAdapter<String> dataAdapter_lens_model = new ArrayAdapter<String>(UpdateData.this, android.R.layout.simple_spinner_item, lens_model_categories);
+        ArrayAdapter<String> dataAdapter_eye = new ArrayAdapter<String>(UpdateData.this, android.R.layout.simple_spinner_item, eye_categories);
 
         // Drop down layout style - list view with radio button
         dataAdapter_gender.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         dataAdapter_lens_model.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter_eye.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         // attaching data adapter to spinner
 
         spinner_gender.setAdapter(dataAdapter_gender);
         spinner_lens_model.setAdapter(dataAdapter_lens_model);
+        spinner_eye.setAdapter(dataAdapter_eye);
 
     }
 }

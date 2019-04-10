@@ -168,14 +168,24 @@
 
             <Spinner
                 android:id="@+id/spinner_gender_1"
-                android:layout_width="150dp"
+                android:layout_width="120dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="7dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@id/tv_gender_1"
+                style="@style/spinner_style"
                 android:gravity="center">
 
             </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/spinner_gender_1"
+                android:text="@string/please_select" />
 
         </RelativeLayout>
 
@@ -196,16 +206,24 @@
                 android:text="Eye* : "
                 android:textSize="18sp" />
 
-            <EditText
-                android:id="@+id/et_eye_1"
+            <Spinner
+                android:id="@+id/spinner_eye"
                 android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@id/tv_eye_1"
-                android:background="@drawable/edittext_style"
-                android:gravity="center"
-                android:hint="Eye"
-                android:textAlignment="center" />
+                style="@style/spinner_style"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/please_select"
+                android:layout_toRightOf="@id/spinner_eye"/>
 
         </RelativeLayout>
 
@@ -229,7 +247,7 @@
             <TextView
                 android:id="@+id/tv_date"
                 android:layout_width="120dp"
-                android:gravity="center"
+                android:gravity="left"
                 android:layout_height="match_parent"
                 android:layout_toRightOf="@id/tv_date_of_surgery"
                 android:layout_margin="7dp"
@@ -250,7 +268,7 @@
 
             <TextView
                 android:id="@+id/tv_lens_model_used"
-                android:layout_width="160dp"
+                android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_margin="7dp"
                 android:gravity="center_vertical"
@@ -258,22 +276,26 @@
                 android:textSize="18sp" />
 
             <Spinner
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
                 android:id="@+id/spinner_lens_model"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
+                style="@style/spinner_style"
                 android:layout_toRightOf="@+id/tv_lens_model_used"
-                android:gravity="center">
+                android:gravity="center_vertical">
 
             </Spinner>
 
             <TextView
-                android:layout_width="120dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_margin="7dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="5dp"
                 android:layout_toRightOf="@id/spinner_lens_model"
-                android:gravity="center"
-                android:text=" (please select)"
-                android:textSize="18sp" />
+                android:gravity="left"
+                android:text="@string/please_select" />
 
         </RelativeLayout>
 
@@ -283,13 +305,14 @@
             android:layout_gravity="center"
             android:layout_marginVertical="5dp"
             android:orientation="horizontal"
-            android:paddingVertical="2dp">
+            android:paddingVertical="2dp"
+            android:layout_marginHorizontal="5dp">
 
             <TextView
                 android:id="@+id/tv_lens_power_used"
-                android:layout_width="160dp"
+                android:layout_width="150dp"
                 android:layout_height="match_parent"
-                android:layout_margin="7dp"
+                android:layout_marginTop="7dp"
                 android:gravity="center_vertical"
                 android:text="Lens Power Used : "
                 android:textSize="18sp" />
@@ -297,8 +320,9 @@
             <EditText
                 android:id="@+id/et_lens_power"
                 android:layout_width="120dp"
-                android:layout_height="match_parent"
+                android:layout_height="30dp"
                 android:layout_marginTop="7dp"
+                android:layout_marginLeft="20dp"
                 android:layout_toRightOf="@id/tv_lens_power_used"
                 android:background="@drawable/edittext_style"
                 android:gravity="center"
@@ -308,14 +332,13 @@
                 android:textAlignment="center" />
 
             <TextView
-                android:layout_width="120dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="3dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="7dp"
                 android:layout_toRightOf="@+id/et_lens_power"
-                android:gravity="center"
-                android:text="Dioptres"
-                android:textSize="18sp" />
+                android:gravity="center_vertical"
+                android:text="Dioptres" />
 
         </RelativeLayout>
 

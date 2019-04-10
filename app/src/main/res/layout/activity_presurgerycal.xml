@@ -390,6 +390,7 @@
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@id/lens_model_text"
+                    style="@style/spinner_style"
                     android:prompt="@string/please_select" />
 
                 <TextView
@@ -398,6 +399,7 @@
                     android:layout_toRightOf="@+id/spinner"
                     android:gravity="center_vertical"
                     android:text="@string/please_select"
+                    android:layout_marginLeft="5dp"
                     android:textSize="18sp" />
 
             </RelativeLayout>

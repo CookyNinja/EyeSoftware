@@ -77,6 +77,7 @@ public class UpdateDataTwo extends AppCompatActivity {
 
         // Spinner element
         Spinner spinner_gender = findViewById(R.id.spinner_gender_2);
+        Spinner spinner_eye = (Spinner) findViewById(R.id.spinner_eye);
 
         // Spinner Drop down elements for gender spinner
 
@@ -85,16 +86,24 @@ public class UpdateDataTwo extends AppCompatActivity {
         gender_categories.add("Male");
         gender_categories.add("Others");
 
+        // Spinner Drop down elements for eye spinner
+        List<String> eye_categories = new ArrayList<String>();
+        eye_categories.add("Left");
+        eye_categories.add("Right");
+
 
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter_gender = new ArrayAdapter<>(UpdateDataTwo.this, android.R.layout.simple_spinner_item, gender_categories );
+        ArrayAdapter<String> dataAdapter_eye = new ArrayAdapter<>(UpdateDataTwo.this, android.R.layout.simple_spinner_item, eye_categories );
 
         // Drop down layout style - list view with radio button
         dataAdapter_gender.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter_eye.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         // attaching data adapter to spinner
 
         spinner_gender.setAdapter(dataAdapter_gender);
+        spinner_eye.setAdapter(dataAdapter_eye);
 
 
     }

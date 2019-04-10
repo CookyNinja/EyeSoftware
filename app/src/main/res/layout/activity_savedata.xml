@@ -2,9 +2,8 @@
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-
-    >
+    android:layout_height="match_parent"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +15,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="40dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="5dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -24,7 +24,6 @@
                 android:layout_marginVertical="10dp"
                 android:layout_weight="2"
                 android:text="Enter Patient Details"
-                android:textAlignment="center"
                 android:textColor="@color/title"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -38,167 +37,174 @@
 
         </LinearLayout>
 
-
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginVertical="5dp"
-            android:orientation="horizontal"
-            android:paddingVertical="2dp">
+            android:orientation="vertical"
+            android:layout_marginHorizontal="5dp">
 
-            <TextView
-                android:id="@+id/tv_ref_no_display_3"
-                android:layout_width="150dp"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="7dp"
-                android:gravity="center_vertical"
-                android:text="Reference Number* :"
-                android:textSize="18sp" />
+                android:layout_gravity="center"
+                android:layout_marginVertical="5dp"
+                android:orientation="horizontal"
+                android:paddingVertical="2dp">
 
-            <EditText
-                android:id="@+id/et_ref_no_display_value_3"
-                android:layout_width="120dp"
-                android:padding="5dp"
+                <TextView
+                    android:id="@+id/tv_ref_no_display_3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Reference Number* :"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_ref_no_display_value_3"
+                    android:layout_width="120dp"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_ref_no_display_3"
+                    android:background="@drawable/edittext_style"
+                    android:gravity="center"
+                    android:hint="Reference Number"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/tv_ref_no_display_3"
-                android:background="@drawable/edittext_style"
-                android:gravity="center"
-                android:hint="Reference Number"
-                android:textSize="13sp" />
+                android:layout_gravity="center"
+                android:layout_marginVertical="5dp"
+                android:orientation="horizontal"
+                android:paddingVertical="2dp">
 
-        </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_name_3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Name :"
+                    android:textSize="18sp" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginVertical="5dp"
-            android:orientation="horizontal"
-            android:paddingVertical="2dp">
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_name_3"
+                    android:background="@drawable/edittext_style"
+                    android:gravity="center"
+                    android:hint="Name"
+                    android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/tv_name_3"
-                android:layout_width="150dp"
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:layout_marginLeft="7dp"
-                android:text="Name :"
-                android:textSize="18sp" />
+                android:layout_gravity="center"
+                android:layout_marginVertical="5dp"
+                android:orientation="horizontal"
+                android:paddingVertical="2dp">
 
-            <EditText
-                android:layout_width="120dp"
+                <TextView
+                    android:id="@+id/tv_age_3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Age :"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_age_3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_age_3"
+                    android:background="@drawable/edittext_style"
+                    android:gravity="center"
+                    android:hint="Age"
+                    android:inputType="numberDecimal"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_toRightOf="@id/et_age_3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="years"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/tv_name_3"
-                android:background="@drawable/edittext_style"
-                android:gravity="center"
-                android:hint="Name"
-                android:textSize="18sp" />
+                android:layout_gravity="center"
+                android:layout_marginVertical="5dp"
+                android:orientation="horizontal"
+                android:paddingVertical="2dp">
 
-        </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_gender_3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Gender :"
+                    android:textSize="18sp" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginVertical="5dp"
-            android:orientation="horizontal"
-            android:paddingVertical="2dp">
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_gender_3"
+                    style="@style/spinner_style"
+                    android:gravity="center" />
 
-            <TextView
-                android:id="@+id/tv_age_3"
-                android:layout_width="150dp"
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/spinner"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/please_select" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="7dp"
-                android:gravity="center_vertical"
-                android:text="Age :"
-                android:textSize="18sp" />
+                android:layout_gravity="center"
+                android:layout_marginVertical="5dp"
+                android:orientation="horizontal"
+                android:paddingVertical="2dp"
+                >
 
-            <EditText
-                android:id="@+id/et_age_3"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/tv_age_3"
-                android:background="@drawable/edittext_style"
-                android:gravity="center"
-                android:hint="Age"
-                android:inputType="numberDecimal"
-                android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/tv_eye_3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Eye* :"
+                    android:textSize="18sp" />
 
-            <TextView
-                android:layout_toRightOf="@id/et_age_3"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="4dp"
-                android:text="years"
-                android:textSize="18sp" />
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_eye_3"
+                    style="@style/spinner_style"
+                    android:gravity="center" />
 
-        </RelativeLayout>
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/spinner2"
+                    android:text="@string/please_select" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginVertical="5dp"
-            android:orientation="horizontal"
-            android:paddingVertical="2dp">
+            </RelativeLayout>
 
-            <TextView
-                android:id="@+id/tv_gender_3"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:layout_marginLeft="7dp"
-                android:text="Gender :"
-                android:textSize="18sp" />
+        </LinearLayout>
 
-            <Spinner
-                android:id="@+id/spinner"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/tv_gender_3"
-                android:gravity="center" />
-
-            <TextView
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/spinner"
-                android:text="@string/please_select" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginVertical="5dp"
-            android:orientation="horizontal"
-            android:paddingVertical="2dp"
-           >
-
-            <TextView
-                android:id="@+id/tv_eye_3"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="7dp"
-                android:gravity="center_vertical"
-                android:text="Eye* :"
-                android:textSize="18sp" />
-
-            <Spinner
-                android:id="@+id/spinner2"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/tv_eye_3"
-                android:gravity="center" />
-
-            <TextView
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/spinner2"
-                android:text="@string/please_select" />
-
-        </RelativeLayout>
 
         <Button
             android:id="@+id/btn_save"

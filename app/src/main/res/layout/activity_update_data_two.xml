@@ -166,14 +166,23 @@
 
             <Spinner
                 android:id="@+id/spinner_gender_2"
-                android:layout_width="150dp"
+                android:layout_width="120dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="7dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
                 android:gravity="center"
-                android:layout_toRightOf="@id/tv_gender_2">
+                android:layout_toRightOf="@id/tv_gender_2"
+                style="@style/spinner_style">
 
             </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/please_select"
+                android:layout_toRightOf="@id/spinner_gender_2"/>
 
         </RelativeLayout>
 
@@ -182,28 +191,36 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginVertical="5dp"
-            android:paddingVertical="2dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingVertical="2dp">
 
             <TextView
-                android:id="@+id/tv_eye_2"
+                android:id="@+id/tv_eye_1"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
-                android:gravity="center_vertical"
                 android:layout_margin="7dp"
+                android:gravity="center_vertical"
                 android:text="Eye* : "
                 android:textSize="18sp" />
 
-            <EditText
-                android:id="@+id/et_eye_2"
+            <Spinner
+                android:id="@+id/spinner_eye"
                 android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_margin="10dp"
-                android:background="@drawable/edittext_style"
-                android:hint="Eye"
-                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_eye_1"
                 android:gravity="center"
-                android:layout_toRightOf= "@id/tv_eye_2"/>
+                style="@style/spinner_style"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginHorizontal="5dp"
+                android:text="@string/please_select"
+                android:layout_toRightOf="@id/spinner_eye"/>
 
         </RelativeLayout>
 
@@ -261,7 +278,6 @@
                 android:gravity="center_vertical"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="7dp"
-                android:layout_marginRight="7dp"
                 android:text="Spherical* : "
                 android:textSize="18sp" />
 
@@ -270,7 +286,6 @@
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="7dp"
-                android:layout_marginLeft="4dp"
                 android:background="@drawable/edittext_style"
                 android:hint="Refractive Error"
                 android:textSize="16sp"
@@ -282,10 +297,9 @@
                 android:layout_width="90dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="7dp"
-                android:layout_marginRight="7dp"
                 android:layout_marginLeft="7dp"
+                android:gravity="center_vertical"
                 android:text="Dioptres"
-                android:textSize="18sp"
                 android:layout_toRightOf="@id/et_spherical_refractive_error"/>
 
         </RelativeLayout>
@@ -305,7 +319,6 @@
                 android:gravity="center_vertical"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="7dp"
-                android:layout_marginRight="7dp"
                 android:text="Cylindrical* : "
                 android:textSize="18sp" />
 
@@ -314,7 +327,6 @@
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="7dp"
-                android:layout_marginLeft="4dp"
                 android:background="@drawable/edittext_style"
                 android:hint="Refractive Error"
                 android:textSize="16sp"
@@ -326,11 +338,10 @@
                 android:layout_width="90dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="7dp"
-                android:layout_marginRight="7dp"
                 android:layout_marginLeft="7dp"
+                android:gravity="center_vertical"
                 android:layout_toRightOf="@id/et_cylindrical_refractive_error"
-                android:text="Dioptres"
-                android:textSize="18sp" />
+                android:text="Dioptres"/>
 
 
         </RelativeLayout>

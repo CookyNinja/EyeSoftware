@@ -50,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:gravity="right"
+                android:gravity="left"
                 android:text="AI4I Model:"
                 android:textSize="18sp" />
 
@@ -75,7 +75,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:gravity="right"
+                android:gravity="left"
                 android:text="SRK/T:"
                 android:textSize="18sp" />
 
@@ -100,7 +100,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:gravity="right"
+                android:gravity="left"
                 android:text="Holladay-1:"
                 android:textSize="18sp" />
 
@@ -125,7 +125,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:gravity="right"
+                android:gravity="left"
                 android:text="Hoffer-Q:"
                 android:textSize="18sp" />
 
@@ -151,7 +151,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:gravity="right"
+                android:gravity="left"
                 android:text="Haigis:"
                 android:textSize="18sp" />
 
